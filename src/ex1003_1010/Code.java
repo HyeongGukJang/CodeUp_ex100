@@ -217,12 +217,19 @@ public class Code {
 		long n = sc.nextLong();
 		System.out.println(n);
 	}
+	
 	private void ex1029() {
 		double n = sc.nextDouble();
 		System.out.println(n);
 	}
+	
 	private void ex1030() {
 		long n = sc.nextLong();
 		System.out.println(n);
+	}
+	
+	private void ex1031() {
+		String a = Integer.toOctalString((sc.nextInt())); // 8진수 변환
+		System.out.println(a);
 	}
 }
