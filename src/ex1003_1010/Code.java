@@ -34,7 +34,19 @@ public class Code {
 //		ex1028();
 //		ex1029();
 //		ex1030();
-		ex1031();
+//		ex1031();
+//		ex1032();
+//		ex1033();
+//		ex1034();
+//		ex1035();
+//		ex1036();
+//		ex1037();
+//		ex1038();
+//		ex1039();
+//		ex1040();
+//		ex1041();
+//		ex1042();
+		ex1043();
 	}
 
 	private void ex1003() {
@@ -231,5 +243,78 @@ public class Code {
 	private void ex1031() {
 		String a = Integer.toOctalString((sc.nextInt())); // 8진수 변환
 		System.out.println(a);
+	}
+	private void ex1032() {
+		String a = Integer.toHexString((sc.nextInt()));
+		System.out.println(a);
+	}
+	private void ex1033() {
+		String a = Integer.toHexString((sc.nextInt()));
+		System.out.println(a.toUpperCase());
+	}
+	private void ex1034() {
+		int a = Integer.valueOf(sc.next(),8);
+		System.out.println(a);
+	}
+	private void ex1035() {
+		int a = Integer.valueOf(sc.next(),16);
+		String b = Integer.toOctalString(a);
+		System.out.println(b);
+	}
+	private void ex1036() {
+		char a = sc.next().charAt(0);
+		System.out.println(a);
+	}
+	private void ex1037() {
+		// 정수를 입력받아 아스키 문자로 출력하는 방법 (char)sc.nextInt();
+		// 아스키 문자를 입력받아 정수를 출력하는 방법 (int)sc.next().charAt(0);
+		int a = (int)sc.next().charAt(0);
+		System.out.println(a);
+	}
+	private void ex1038() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		ex1038_sum(a, b);
+	}
+
+	private void ex1038_sum(int a, int b) {
+		int c = a + b;
+		System.out.println(c);
+	}
+	
+	private void ex1039() {
+		Long a = sc.nextLong();
+		Long b = sc.nextLong();
+		System.out.println(a + b);
+	}
+	
+	private void ex1040() {
+		int a = sc.nextInt();
+		System.out.printf("%d", -a);
+	}
+	
+	private void ex1041() {
+		char a = sc.next().charAt(0);
+		System.out.printf("%c", a+1);
+	}
+	
+	private void ex1042() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		mul(a, b);
+	}
+	private void mul(int a, int b) {
+		int c = a/b;
+		System.out.println(c);
+	}
+	
+	private void ex1043() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		rest(a, b);
+	}
+	private void rest(int a, int b) {
+		int c = a%b;
+		System.out.println(c);
 	}
 }
