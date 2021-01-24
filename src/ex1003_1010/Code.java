@@ -29,7 +29,12 @@ public class Code {
 //		ex1021();
 //		ex1024();
 //		ex1025();
-		ex1026();
+//		ex1026();
+//		ex1027();
+//		ex1028();
+//		ex1029();
+//		ex1030();
+		ex1031();
 	}
 
 	private void ex1003() {
@@ -201,4 +206,23 @@ public class Code {
 		System.out.printf("%d", m ,"입니다.");
 	}
 	
+	private void ex1027() {
+		String a = sc.next();
+		a=a.replace(".", "-");
+		String list[] = a.split("-");
+		System.out.println(list[2]+"-"+list[1]+"-"+list[0]);
+	}
+	
+	private void ex1028() {
+		long n = sc.nextLong();
+		System.out.println(n);
+	}
+	private void ex1029() {
+		double n = sc.nextDouble();
+		System.out.println(n);
+	}
+	private void ex1030() {
+		long n = sc.nextLong();
+		System.out.println(n);
+	}
 }
