@@ -46,7 +46,8 @@ public class Code {
 //		ex1040();
 //		ex1041();
 //		ex1042();
-		ex1043();
+//		ex1043();
+		ex1044();
 	}
 
 	private void ex1003() {
@@ -316,5 +317,9 @@ public class Code {
 	private void rest(int a, int b) {
 		int c = a%b;
 		System.out.println(c);
+	}
+	private void ex1044() {
+		int a = sc.nextInt();
+		System.out.println(a+1);
 	}
 }
