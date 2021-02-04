@@ -90,7 +90,7 @@ public class Code {
 		if(a == 0 && b == 0) {
 			System.out.println("참");
 		}
-	}
+	}  
 	private void ex1059() {
 
 	}
