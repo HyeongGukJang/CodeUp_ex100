@@ -83,7 +83,7 @@ public class Code {
 		if(a == 1 && b == 1 || a == 0 && b == 0) {
 			System.out.println("참");
 		}  
-	}
+	}  
 	private void ex1058() {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
