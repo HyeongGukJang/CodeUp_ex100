@@ -18,8 +18,9 @@ public class Code {
 //		ex1056();
 //		ex1057();
 //		ex1058();
-		ex1059();
-		
+//		ex1059();
+//		ex1060();
+		ex1061();
 	}
 
 	private void ex1051() {
@@ -91,7 +92,21 @@ public class Code {
 			System.out.println("참");
 		}
 	}  
+	
 	private void ex1059() {
-
+		int a = sc.nextInt();
+		System.out.println(~a);
+	}
+	
+	private void ex1060() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println(a&b);
+	}
+	
+	private void ex1061() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println(a|b);
 	}
 }
