@@ -77,12 +77,12 @@ public class Code {
 			System.out.println("참");
 		}
 	}
-	private void ex1057() {
+	private void ex1057() { 
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		if(a == 1 && b == 1 || a == 0 && b == 0) {
 			System.out.println("참");
-		}
+		}  
 	}
 	private void ex1058() {
 		int a = sc.nextInt();
