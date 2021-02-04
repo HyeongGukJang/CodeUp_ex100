@@ -1,4 +1,4 @@
-package ex1003_1010;
+package ex1003_1050;
 
 import java.util.Scanner;
 
@@ -47,7 +47,13 @@ public class Code {
 //		ex1041();
 //		ex1042();
 //		ex1043();
-		ex1044();
+//		ex1044();
+//		ex1045();
+//		ex1046();
+//		ex1047();
+//		ex1048();
+//		ex1049();
+		ex1050();
 	}
 
 	private void ex1003() {
@@ -167,31 +173,33 @@ public class Code {
 		char a = sc.next().charAt(0);
 		System.out.println(a);
 	}
-	
+
 	private void ex1024() {
 		String a = sc.next();
 		char list[] = new char[a.length()];
-		
-		for (int i = 0; i< a.length(); i++) {
-			list[i]=a.charAt(i);
+
+		for (int i = 0; i < a.length(); i++) {
+			list[i] = a.charAt(i);
 		}
-		for (char i:list) {
-			System.out.println("'"+i+"'");
+		for (char i : list) {
+			System.out.println("'" + i + "'");
 		}
 	}
+
 	private void ex1025() {
 		String num = sc.next();
 		int list[] = new int[num.length()];
-		
-		for(int i = 0; i<num.length(); i++) {
-			list[i]=num.charAt(i)-'0';
+
+		for (int i = 0; i < num.length(); i++) {
+			list[i] = num.charAt(i) - '0';
 		}
-		System.out.println("["+list[0]*10000+"]");
-		System.out.println("["+list[1]*1000+"]");
-		System.out.println("["+list[2]*100+"]");
-		System.out.println("["+list[3]*10+"]");
-		System.out.println("["+list[4]+"]");
+		System.out.println("[" + list[0] * 10000 + "]");
+		System.out.println("[" + list[1] * 1000 + "]");
+		System.out.println("[" + list[2] * 100 + "]");
+		System.out.println("[" + list[3] * 10 + "]");
+		System.out.println("[" + list[4] + "]");
 	}
+
 	private void ex1026() {
 		int h = sc.nextInt();
 		int m = sc.nextInt();
@@ -208,70 +216,77 @@ public class Code {
 			if (m <= 59)
 				break;
 		}
-		while(s >= 61) {
+		while (s >= 61) {
 			System.out.println("시간(초)를 다시 입력하세요... : ");
 			s = sc.nextInt();
-			if(s <= 61)
+			if (s <= 61)
 				break;
 		}
 		System.out.printf("입력은 %d, %d, %d", h, m, s);
 		System.out.println("\n");
-		System.out.printf("%d", m ,"입니다.");
+		System.out.printf("%d", m, "입니다.");
 	}
-	
+
 	private void ex1027() {
 		String a = sc.next();
-		a=a.replace(".", "-");
+		a = a.replace(".", "-");
 		String list[] = a.split("-");
-		System.out.println(list[2]+"-"+list[1]+"-"+list[0]);
+		System.out.println(list[2] + "-" + list[1] + "-" + list[0]);
 	}
-	
+
 	private void ex1028() {
 		long n = sc.nextLong();
 		System.out.println(n);
 	}
-	
+
 	private void ex1029() {
 		double n = sc.nextDouble();
 		System.out.println(n);
 	}
-	
+
 	private void ex1030() {
 		long n = sc.nextLong();
 		System.out.println(n);
 	}
-	
+
 	private void ex1031() {
 		String a = Integer.toOctalString((sc.nextInt())); // 8진수 변환
 		System.out.println(a);
 	}
+
 	private void ex1032() {
 		String a = Integer.toHexString((sc.nextInt()));
 		System.out.println(a);
 	}
+
 	private void ex1033() {
 		String a = Integer.toHexString((sc.nextInt()));
 		System.out.println(a.toUpperCase());
 	}
+
 	private void ex1034() {
-		int a = Integer.valueOf(sc.next(),8);
+		int a = Integer.valueOf(sc.next(), 8);
 		System.out.println(a);
 	}
+
 	private void ex1035() {
-		int a = Integer.valueOf(sc.next(),16);
+		int a = Integer.valueOf(sc.next(), 16);
 		String b = Integer.toOctalString(a);
 		System.out.println(b);
 	}
+
 	private void ex1036() {
 		char a = sc.next().charAt(0);
 		System.out.println(a);
 	}
+
 	private void ex1037() {
 		// 정수를 입력받아 아스키 문자로 출력하는 방법 (char)sc.nextInt();
 		// 아스키 문자를 입력받아 정수를 출력하는 방법 (int)sc.next().charAt(0);
-		int a = (int)sc.next().charAt(0);
+		int a = (int) sc.next().charAt(0);
 		System.out.println(a);
 	}
+
 	private void ex1038() {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
@@ -282,44 +297,92 @@ public class Code {
 		int c = a + b;
 		System.out.println(c);
 	}
-	
+
 	private void ex1039() {
 		Long a = sc.nextLong();
 		Long b = sc.nextLong();
 		System.out.println(a + b);
 	}
-	
+
 	private void ex1040() {
 		int a = sc.nextInt();
 		System.out.printf("%d", -a);
 	}
-	
+
 	private void ex1041() {
 		char a = sc.next().charAt(0);
-		System.out.printf("%c", a+1);
+		System.out.printf("%c", a + 1);
 	}
-	
+
 	private void ex1042() {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		mul(a, b);
 	}
+
 	private void mul(int a, int b) {
-		int c = a/b;
+		int c = a / b;
 		System.out.println(c);
 	}
-	
+
 	private void ex1043() {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		rest(a, b);
 	}
+
 	private void rest(int a, int b) {
-		int c = a%b;
+		int c = a % b;
 		System.out.println(c);
 	}
+
 	private void ex1044() {
 		int a = sc.nextInt();
-		System.out.println(a+1);
+		System.out.println(a + 1);
+	}
+
+	private void ex1045() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+
+	}
+
+	private void ex1046() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		System.out.println("합 :" + sum(a, b, c));
+		System.out.println("평균 :" + Average(a, b, c));
+	}
+
+	private int Average(int a, int b, int c) {
+		return sum(a, b, c) / 3;
+	}
+
+	private int sum(int a, int b, int c) {
+		return (a + b + c);
+	}
+
+	private void ex1047() {
+		int a = sc.nextInt();
+		System.out.printf("%d", a << 1);
+	}
+
+	private void ex1048() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.printf("%d", a<<b);
+	}
+	private void ex1049() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a > b)System.out.println("1");
+		if(b >= a)System.out.println("0");
+	}
+	private void ex1050() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a == b) System.out.println("1");
+		if(a != b) System.out.println("0");
 	}
 }
