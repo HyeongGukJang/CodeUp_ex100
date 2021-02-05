@@ -23,7 +23,13 @@ public class Code {
 //		ex1061();
 //		ex1062();
 //		ex1063();
-		ex1064();
+//		ex1064();
+//		ex1065();
+//		ex1066();
+//		ex1067();
+//		ex1068();
+		ex1069();
+		
 	}
 
 	private void ex1051() {
@@ -137,9 +143,62 @@ public class Code {
 		int min = (a > b ? b > c ? c : b : a > c ? c : a);
 		System.out.println(min);
 	}
+
 	private void ex1065() {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
+		if (a % 2 == 0) {
+			System.out.printf("%d", a);
+		}
+		if (b % 2 == 0) {
+			System.out.printf("%d", b);
+		}
+		if (c % 2 == 0) {
+			System.out.printf("%d", c);
+		}
+	}
+
+	private void ex1066() {
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		if (a % 2 == 0) {
+			System.out.println("even");
+		}else
+			System.out.println("odd");
+		if (b % 2 == 0) {
+			System.out.println("even");
+		}else
+			System.out.println("odd");
+		if (c % 2 == 0) {
+			System.out.println("even");
+		}else
+			System.out.println("odd");
+	}
+	private void ex1067() {
+		int a = sc.nextInt();
+		if(a < 0 || a % 2 == 0) {
+			System.out.println("minus");
+			System.out.println("even");
+		}else if(a > 0 || a % 2 != 0){
+			System.out.println("plus");
+			System.out.println("odd");
+		}
+	}
+	private void ex1068() {
+		int num = sc.nextInt();
+		if(100 >= num && num >= 90) {
+			System.out.println("A");
+		}else if(89 >= num && num >= 70) {
+			System.out.println("B");
+		}else if(69 >= num && num >= 40) {
+			System.out.println("C");
+		}else if(39 >= num && num >= 0) {
+			System.out.println("D");
+		}
+	}
+	private void ex1069() {
+		
 	}
 }
