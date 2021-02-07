@@ -32,7 +32,14 @@ public class Code {
 //		ex1070();
 //		ex1071();
 //		ex1072();
-		ex1073();
+//		ex1073();
+//		ex1074();
+//		ex1075();
+//		ex1076();
+//		ex1077();
+//		ex1078();
+//		ex1079();
+		ex1080();
 	}
 
 	private void ex1051() {
@@ -256,7 +263,100 @@ public class Code {
 			System.out.println(m[i]);
 		}
 	}
+
 	private void ex1073() {
+		while (true) {
+			int a = sc.nextInt();
+			System.out.println(a);
+			if (a == 0)
+				break;
+		}
+	}
+
+	private void ex1074() {
+		int a = sc.nextInt();
+		while (a > 100) {
+			System.out.println("수를 초과 다시입력 : ");
+			a = sc.nextInt();
+		}
+		while (a != 0) {
+			System.out.println(a);
+			a--;
+		}
+	}
+
+	private void ex1075() {
+		int a = sc.nextInt();
+		while (a > 100) {
+			System.out.println("수를 초과 다시입력 : ");
+			a = sc.nextInt();
+		}
+		while (a != 0) {
+			System.out.println(a);
+			a--;
+		}
+	}
+
+	private void ex1076() {
+		System.out.println("알파벳입력 : ");
+		char a = sc.next().charAt(0);
+		char b = 'a';
+		do {
+			System.out.println(b + " ");
+			b += 1;
+		} while (b <= a);
+	}
+
+	private void ex1077() {
+		System.out.print("정수 입력 : ");
+		int a = sc.nextInt();
+
+		for (int i = 0; i <= a; i++) {
+			System.out.println(i);
+		}
+	}
+
+	private void ex1078() {
+		System.out.print("정수 입력 : ");
+		int a = sc.nextInt();
+
+		int sum = 0;
+		for (int i = 1; i <= a; i++) {
+			if (i % 2 == 0) {
+				sum += i;
+			}
+		}
+		System.out.print(sum);
+	}
+
+	private void ex1079() {
+		System.out.print("문자입력 : ");
+		while (true) {
+			char a = sc.next().charAt(0);
+
+			if (a == 'q') {
+				System.out.println(a);
+				break;
+			}
+			System.out.println(a);
+		}
+	}
+
+	private void ex1080() {
+        System.out.print("정수입력 : ");
+        int a = sc.nextInt();
+        
+        int sum=0;
+        int count=0;
+        if(a>=0&&a<=1000) {
+            while(sum<a) {
+                count++;
+                sum+=count;
+            }
+        }
+        System.out.println(count);
+	}
+	private void ex1081() {
 
 	}
 }
