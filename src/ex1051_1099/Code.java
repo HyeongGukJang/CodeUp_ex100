@@ -185,7 +185,7 @@ public class Code {
 			System.out.println("plus");
 			System.out.println("odd");
 		}
-	}
+	} 
 	private void ex1068() {
 		int num = sc.nextInt();
 		if(100 >= num && num >= 90) {
