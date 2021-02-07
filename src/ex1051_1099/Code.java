@@ -28,8 +28,11 @@ public class Code {
 //		ex1066();
 //		ex1067();
 //		ex1068();
-		ex1069();
-		
+//		ex1069();
+//		ex1070();
+//		ex1071();
+//		ex1072();
+		ex1073();
 	}
 
 	private void ex1051() {
@@ -165,40 +168,95 @@ public class Code {
 		int c = sc.nextInt();
 		if (a % 2 == 0) {
 			System.out.println("even");
-		}else
+		} else
 			System.out.println("odd");
 		if (b % 2 == 0) {
 			System.out.println("even");
-		}else
+		} else
 			System.out.println("odd");
 		if (c % 2 == 0) {
 			System.out.println("even");
-		}else
+		} else
 			System.out.println("odd");
 	}
+
 	private void ex1067() {
 		int a = sc.nextInt();
-		if(a < 0 || a % 2 == 0) {
+		if (a < 0 || a % 2 == 0) {
 			System.out.println("minus");
 			System.out.println("even");
-		}else if(a > 0 || a % 2 != 0){
+		} else if (a > 0 || a % 2 != 0) {
 			System.out.println("plus");
 			System.out.println("odd");
 		}
-	} 
+	}
+
 	private void ex1068() {
 		int num = sc.nextInt();
-		if(100 >= num && num >= 90) {
+		if (100 >= num && num >= 90) {
 			System.out.println("A");
-		}else if(89 >= num && num >= 70) {
+		} else if (89 >= num && num >= 70) {
 			System.out.println("B");
-		}else if(69 >= num && num >= 40) {
+		} else if (69 >= num && num >= 40) {
 			System.out.println("C");
-		}else if(39 >= num && num >= 0) {
+		} else if (39 >= num && num >= 0) {
 			System.out.println("D");
 		}
 	}
+
 	private void ex1069() {
-		
+		char answer = sc.next().charAt(0);
+		switch (answer) {
+		case 'A':
+			System.out.println("best!!!");
+			break;
+		case 'B':
+			System.out.println("good!!");
+			break;
+		case 'C':
+			System.out.println("run!");
+			break;
+		case 'D':
+			System.out.println("slowly~");
+			break;
+		default:
+			System.out.println("what?");
+		}
+	}
+
+	private void ex1070() {
+		int month = sc.nextInt();
+		if (month == 12 || month == 1 || month == 2) {
+			System.out.println("winter");
+		} else if (month == 3 || month == 4 || month == 5) {
+			System.out.println("spring");
+		} else if (month == 6 || month == 7 || month == 8) {
+			System.out.println("summer");
+		} else
+			System.out.println("fall");
+	}
+
+	private void ex1071() {
+		while (true) {
+			int a = sc.nextInt();
+			if (a == 0)
+				break;
+			System.out.println(a);
+		}
+	}
+
+	private void ex1072() {
+		int a = sc.nextInt();
+		int m[] = new int[a];
+
+		for (int i = 0; i < a; i++) {
+			m[i] = sc.nextInt();
+		}
+		for (int i = 0; i < a; i++) {
+			System.out.println(m[i]);
+		}
+	}
+	private void ex1073() {
+
 	}
 }
