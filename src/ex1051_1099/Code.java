@@ -40,7 +40,10 @@ public class Code {
 //		ex1078();
 //		ex1079();
 //		ex1080();
-		ex1081();
+//		ex1081();
+//		ex1082();
+//		ex1083();
+		ex1084();
 	}
 
 	private void ex1051() {
@@ -344,26 +347,64 @@ public class Code {
 	}
 
 	private void ex1080() {
-        System.out.print("정수입력 : ");
-        int a = sc.nextInt();
-        
-        int sum=0;
-        int count=0;
-        if(a>=0&&a<=1000) {
-            while(sum<a) {
-                count++;
-                sum+=count;
-            }
-        }
-        System.out.println(count);
+		System.out.print("정수입력 : ");
+		int a = sc.nextInt();
+
+		int sum = 0;
+		int count = 0;
+		if (a >= 0 && a <= 1000) {
+			while (sum < a) {
+				count++;
+				sum += count;
+			}
+		}
+		System.out.println(count);
 	}
+
 	private void ex1081() {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		for(int i = 0; i<=a; i++) {
-			for(int j = 0; j<=b; j++) {
-				System.out.println(i +" "+j);
+		for (int i = 0; i <= a; i++) {
+			for (int j = 0; j <= b; j++) {
+				System.out.println(i + " " + j);
 			}
 		}
+	}
+
+	private void ex1082() {
+		String a = sc.next();
+		for (int i = 0; i < 16; i++) {
+			System.out.println(a + "*" + Integer.toString(i).toUpperCase() + "="
+					+ Integer.toHexString(Integer.valueOf(a, 16) * i));
+		}
+	}
+
+	private void ex1083() {
+		int n = sc.nextInt();
+		for (int i = 1; i < n; i++) {
+			if (i % 3 == 0) {
+				System.out.println("X ");
+				i++;
+			}
+			System.out.println(i + " ");
+		}
+	}
+
+	private void ex1084() {
+		String num = sc.nextLine();
+		String[] nums = num.split(" ");
+		int r = Integer.parseInt(nums[0]);
+		int g = Integer.parseInt(nums[1]);
+		int b = Integer.parseInt(nums[2]);
+
+		for (int i = 0; i < r; i++) {
+			for (int j = 0; j < g; j++) {
+				for (int k = 0; k < b; k++) {
+					System.out.println(i + " " + j + " " + k);
+
+				}
+			}
+		}
+		System.out.println(r * g * b);
 	}
 }
