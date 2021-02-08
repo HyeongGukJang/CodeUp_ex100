@@ -396,15 +396,18 @@ public class Code {
 		int r = Integer.parseInt(nums[0]);
 		int g = Integer.parseInt(nums[1]);
 		int b = Integer.parseInt(nums[2]);
-
+		int c = 0;
 		for (int i = 0; i < r; i++) {
 			for (int j = 0; j < g; j++) {
 				for (int k = 0; k < b; k++) {
 					System.out.println(i + " " + j + " " + k);
-
+					c++;
 				}
 			}
 		}
-		System.out.println(r * g * b);
+		System.out.println(c);
+	}
+	private void ex1085() {
+
 	}
 }
